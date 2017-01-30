@@ -1,0 +1,14 @@
+ <button (click)="getBinConfig()">Get Data</button> 
+
+        <ul class="list-group custom-list">
+            <li class="row">
+                <div class="col-md-4"> <a> Name </a></div>
+                <div class="col-md-4"> <a (click)="sortByDate('updated')"  class="cursor-pointer"> Last Updated &nbsp; <i class="fa fa-arrow-down" aria-hidden="true"></i> </a></div>
+                <div class="col-md-4"> <a (click)="sortByDate('lastExecuted')" class="cursor-pointer"> Last Executed &nbsp; <i class="fa fa-arrow-up" aria-hidden="true"></i> </a></div>
+            </li>
+            <li class="list-group-item row" *ngFor="let objc of incomeData ">
+                <div class="col-md-4">{{objc.name}}</div>
+                <div class="col-md-4">{{objc.datetimes.updated}} </div>
+                <div class="col-md-4">{{objc.datetimes.lastExecuted}} </div>
+            </li>
+        </ul>

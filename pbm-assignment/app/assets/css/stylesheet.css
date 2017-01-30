@@ -1,0 +1,10 @@
+.custom-list {
+    padding:10px;
+}
+.custom-list .row{
+    margin:0px;
+    padding:10px 0;   
+}
+.cursor-pointer{ 
+    cursor: pointer;
+}
